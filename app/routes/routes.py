@@ -10,7 +10,7 @@ blueprints = {}
 
 def stop(env, resp):
     resp("200 OK", [("Content-Type", "text/plain")])
-    return [b"Phil Wilding API. Autodeploy attempt 1. Basepath /v1/"]
+    return [b"Adrian API. Autodeploy attempt 1. Basepath /v1/"]
 
 
 def init_routes(app):
@@ -25,7 +25,7 @@ def init_routes(app):
     @app.get("/")
     def index():
         return Response(
-            {"api_version": "v0.1", "api_description": "Phil Wilding Base API"},
+            {"api_version": "v0.1", "api_description": "Adrian Base API"},
             Response.HTTP_SUCCESS,
         ).build()
 
